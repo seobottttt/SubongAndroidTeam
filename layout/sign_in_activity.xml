@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/DeepSkyBlue">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctl_LogoAndBack_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/onlylogo"
+            android:layout_width="65dp"
+            android:layout_height="66dp"
+            android:src="@drawable/onlylogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/logoname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RedMushRoom\nin subong"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/onlylogo"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK > "
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            android:background="@color/DeepSkyBlue"
+            android:textColor="@color/white"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctl_signin_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ctl_LogoAndBack_container"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/signin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="회원 가입"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="40sp"/>
+
+        <EditText
+            android:id="@+id/signin_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="아이디 입력"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/signin_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            app:layout_constraintWidth_percent="0.7"/>
+
+        <EditText
+            android:id="@+id/signin_pw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 입력"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/signin_id"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <EditText
+            android:id="@+id/signin_pw_re"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="비밀번호 재입력"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/signin_pw"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <EditText
+            android:id="@+id/signin_nickname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="닉네임 입력"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/signin_pw_re"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"/>
+
+        <EditText
+            android:id="@+id/signin_pnum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화번호 입력"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/signin_nickname"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:backgroundTint="@color/white"/>
+
+
+
+
+
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
