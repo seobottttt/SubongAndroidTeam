@@ -15,24 +15,14 @@
         android:layout_marginTop="20dp">
 
         <ImageView
-            android:id="@+id/logo_image"
+            android:id="@+id/iv_logo"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:src="@drawable/img"
+            android:src="@drawable/logo_with_string"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"/>
 
-<!--        <TextView-->
-<!--            android:id="@+id/logo_text"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="RedmushRoom"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:layout_marginBottom="10dp"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"/>-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -47,21 +37,26 @@
         android:layout_marginTop="60dp">
 
         <EditText
-            android:id="@+id/login_id"
+            android:id="@+id/et_login_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="아이디 입력"
+            android:hint="아이디 입력"
+            android:inputType="text"
+            android:maxLines="1"
             android:textColor="@color/white"
+            android:imeOptions="actionNext"
             android:backgroundTint="@color/white"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
         <EditText
-            android:id="@+id/login_pw"
+            android:id="@+id/et_login_pw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/login_id"
-            android:text="비밀번호 입력"
+            app:layout_constraintTop_toBottomOf="@+id/et_login_id"
+            android:hint="비밀번호 입력"
+            android:inputType="text"
+            android:imeOptions="actionDone"
             android:textColor="@color/white"
             android:backgroundTint="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
@@ -80,72 +75,76 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp">
 
-        <Button
-            android:id="@+id/social_kakao_button"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_social_kakao"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/circle"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/social_facebook_button"
+            app:layout_constraintEnd_toStartOf="@+id/btn_social_facebook"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintWidth_percent="0.2"
             android:text="kakao"/>
 
-        <Button
-            android:id="@+id/social_facebook_button"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_social_facebook"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/circle"
-            app:layout_constraintStart_toEndOf="@id/social_kakao_button"
-            app:layout_constraintEnd_toStartOf="@id/social_google_button"
+            app:layout_constraintStart_toEndOf="@id/btn_social_kakao"
+            app:layout_constraintEnd_toStartOf="@id/btn_social_google"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintWidth_percent="0.2"
             android:text="fbook"/>
 
-        <Button
-            android:id="@+id/social_google_button"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_social_google"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:background="@drawable/circle"
             android:text="google"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/social_facebook_button"
+            app:layout_constraintStart_toEndOf="@id/btn_social_facebook"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.2"/>
+            app:layout_constraintWidth_percent="0.2"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/ctl_loginbutton_container"
+        android:id="@+id/ctl_login_signup_btn_container"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/ctl_social_login_container"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="50dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="60dp">
 
-        <Button
-            android:id="@+id/login_button"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="로그인"
             android:background="@drawable/circle"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintWidth_percent="0.6"/>
 
-        <Button
-            android:id="@+id/signup_button"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signup"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="회원 가입"
             android:background="@drawable/circle"
-            android:textColor="@color/black"
-            app:layout_constraintTop_toBottomOf="@+id/login_button"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/btn_login"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="15dp"
