@@ -72,42 +72,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp">
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_social_kakao"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/circle"
+            android:layout_height="0dp"
+            android:background="@drawable/kakao"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btn_social_facebook"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintWidth_percent="0.2"
-            android:text="kakao"/>
+            />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_social_facebook"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/circle"
+            android:layout_height="0dp"
+            android:background="@drawable/facebook"
             app:layout_constraintStart_toEndOf="@id/btn_social_kakao"
             app:layout_constraintEnd_toStartOf="@id/btn_social_google"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintWidth_percent="0.2"
-            android:text="fbook"/>
+            />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_social_google"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:background="@drawable/circle"
-            android:text="google"
+            android:layout_height="50dp"
+            android:background="@drawable/google"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/btn_social_facebook"
             app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintWidth_percent="0.2"
             />
 
