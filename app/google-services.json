@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "796956737331",
+    "project_id": "dlife-81b65",
+    "storage_bucket": "dlife-81b65.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796956737331:android:25e15811c3a26b8c6bc846",
+        "android_client_info": {
+          "package_name": "com.example.practice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796956737331-ab1b7hd4mvagnpbe37cmd3f7mure0f9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFgYnqNW2-qinPwlIgza99DFwPRJKXtlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796956737331-ab1b7hd4mvagnpbe37cmd3f7mure0f9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:796956737331:android:3325db9b0d7ecb6d6bc846",
+        "android_client_info": {
+          "package_name": "org.techtown.dlife"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "796956737331-ab1b7hd4mvagnpbe37cmd3f7mure0f9h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFgYnqNW2-qinPwlIgza99DFwPRJKXtlE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "796956737331-ab1b7hd4mvagnpbe37cmd3f7mure0f9h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

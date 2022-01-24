@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/DeepSkyBlue">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctl_LogoAndBack_container"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_only_logo"
+            android:layout_width="65dp"
+            android:layout_height="66dp"
+            android:src="@drawable/onlylogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RedMushRoom\nin subong"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toEndOf="@+id/iv_only_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_back_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BACK > "
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/DeepSkyBlue"
+            android:textColor="@color/white"
+            style="@style/Widget.AppCompat.Button.Borderless"/>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/tv_logo_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/tv_carnumber_input"
+            android:layout_marginTop="45dp"/>
+
+        <TextView
+                android:id="@+id/tv_carnumber_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="차 번호 입력"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/tv_logo_name"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="40sp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/tv_logo_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_carnumber_input"
+            android:layout_marginTop="45dp"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ctl_input_car_num"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/ctl_LogoAndBack_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        >
+
+        <EditText
+            android:id="@+id/et_input_car_number"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/car_number_input_et"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:hint="차 번호 입력"
+            android:inputType="text"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_finish_signup"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@+id/ctl_input_car_num"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/circle"
+        android:text="회원가입"
+        android:textColor="@color/white"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
